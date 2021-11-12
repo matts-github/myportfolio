@@ -1,0 +1,72 @@
+body {
+    width: 100%;
+}
+.img-container {
+    background-image: url(../img/banner.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.inner-container, h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 7px 7px 7px #000;
+}
+.img-container span {
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+}
+.fa-angle-down {
+    color: #fff;
+}
+.img-container .inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 81vh;
+}
+.img-container .scroll-down {
+    display: block;
+    margin: 10px 0;
+    margin-top: -10px;
+    text-align: center;
+    font-size: 2rem;
+}
+.img-container .scroll-down a {
+    font-size: 1.5rem;
+    color: #fff;
+}
+.scroll-down:hover > * {
+    color: #8b0000;
+}
+.scroll-down a:hover {
+    color: #8b0000;
+}
+// Media queires
+@media screen and (min-width: 426px) {
+    .inner-container, h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    .inner-container, h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+    .img-container span {
+        font-size: 2rem;
+        margin-top: 1.5rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .img-container .inner-container {
+        height: 93vh;
+    }
+
+}

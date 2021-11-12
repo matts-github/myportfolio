@@ -1,0 +1,31 @@
+@import 'partials/banner.scss';
+@import 'partials/portfolio.scss';
+@import 'partials/contact.scss';
+@import 'partials/mobile-nav.scss';
+@import 'partials/projects.scss';
+@import 'partials/nav-bar.scss';
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+main {
+    background-color: #d3d3d3d3;
+    padding-bottom: 3rem;
+}
+.wrapper main {
+    background-color: #000;
+    padding-bottom: 3rem;
+}
+// Media queires
+@media screen and (max-width: 1023px) {
+    .wrapper main {
+        margin-top: 7px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .wrapper main {
+        margin-left: 13.5rem;
+    }
+}

@@ -1,0 +1,71 @@
+#projects {
+    padding: 3rem 2rem 0rem 2rem;
+}
+.projects-content .project {
+    display: block;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin-bottom: 3rem;
+    flex-basis: 45%;
+    margin-right: 10px;
+}
+.projects-content .project-img {
+    display: flex;
+    flex-shrink: 1;
+    overflow: hidden;
+    max-height: 250px;
+    max-width: 100%;
+    border-radius: 10%;
+    height: 240px;
+}
+.projects-content .project-img, img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    object-position: center top;
+    vertical-align: top;
+    transform-origin: top;
+}
+.projects-content .description {
+    font-size: 1.5rem;
+    position: relative;
+    color: #367588;
+    margin-top: 1rem;
+    margin-bottom: 5px;
+    left: 0;
+}
+.project-view {
+    color: #367588;
+}
+// Media quieres
+@media screen and (max-width: 767px) {
+    .projects-content {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #projects {
+        padding: 3rem 4rem 0rem 4rem;
+    }
+    .projects-content {
+        justify-content: space-between;
+    }
+    .projects-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .projects-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .projects-content > * {
+        flex: 1 1 33%;
+        max-width: 30%;
+    }
+}
