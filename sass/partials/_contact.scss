@@ -50,7 +50,7 @@
         position: relative;
         top: 10px;
         margin-bottom: 15px;
-        left: 0;
+        left: -10px;
         padding-bottom: 50px;
     }
     .form-name {
@@ -61,12 +61,14 @@
         display: flex;
         flex-direction: row;
         margin-right: 10px;
+        margin-left: 10px;
         width: 50%;
     }
     .form-name .lname {
         display: flex;
         flex-direction: row;
         margin-right: 10px;
+        margin-left: 10px;
         width: 50%;
     }
     .style-input {
@@ -79,18 +81,24 @@
         width: 95%;
         height: 50%;
         font-size: 1rem;
+        padding: 10px;
     }
     .email {
         display: flex;
         flex-direction: row;
         font-size: 1.5rem;
+        margin-left: 10px;
+        width: 100%;
     }
     .subject {
         display: flex;
         flex-direction: row;
+        margin-left: 10px;
+        width: 100%;
     }
     #message {
-        border: 1px solid #367588 ;
+        border: 1px solid #367588;
+        margin-left: 10px;
     }
     .btn {
         font-weight: 600;
@@ -100,6 +108,7 @@
         padding: 10px 15px;
         cursor: pointer;
         transition: 0.5s;
+        margin-left: 10px;
     }
     .btn:hover {
         background-color: #8b0000;
@@ -153,6 +162,24 @@
         margin-top: 50px;
         padding: 3rem 4rem 3rem;
     }
+    .email {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.5rem;
+        margin-left: 10px;
+        width: 97%;
+    }
+    .subject {
+        display: flex;
+        flex-direction: row;
+        margin-left: 10px;
+        width: 97%;
+    }
+    #message {
+        border: 1px solid #367588;
+        margin-left: 10px;
+        width: 92%;
+    }
     .details h3:hover {
         color: #8b0000;
     }
@@ -170,12 +197,12 @@
     .details .phone {
         position: relative;
         right: 135px;
-        top: 50px;
+        top: 0;
     }
     .details .email {
         position: relative;
-        right: 12px;
-        top: 50px;
+        left: -10px;
+        top: 0;
         margin-bottom: 50px;
     }
     .email {

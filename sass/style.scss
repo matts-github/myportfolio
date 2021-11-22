@@ -20,22 +20,29 @@
 @media screen and (max-width: 1023px) {   
 }
 @media screen and (min-width: 1024px) {
-    .wrapper main {
-        margin-left: 13.5rem;
+        .wrapper main {
+            margin-left: 13.5rem;
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            position: relative;
+            left: 250px;
+        }
     }
 }
 //internet explorer
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
     @media screen and (max-width: 767px) {
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         .projects-content {
             flex-direction: column;
         }
     }
+    }
     @media screen and (min-width: 1024px){
-        .projects-content {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        }
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            .projects-content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            }
     }
 }        

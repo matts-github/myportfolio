@@ -10,6 +10,7 @@
 #scs-scheme .scs-intro {
     align-items: center;
     padding: 80px 10px 100px;
+    line-height: 1.5;
 }
 #scs-scheme .scs-intro .scs-title {
     display: flex;
@@ -41,6 +42,9 @@
 #scs-scheme .scs-intro {
     border-bottom: 3px solid #fff;
 } 
+#scs-scheme .scs-intro:last-child {
+    border-bottom: none;
+}
 .scs-intro a {
     color: aquamarine;
     position: relative;
