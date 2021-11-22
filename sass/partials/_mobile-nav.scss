@@ -67,7 +67,6 @@
     width: 100vw;
     height: 7em;
     z-index: 1;
-    // position: fixed;
     top: 0;
     left: 0;
     justify-content: space-between;
@@ -84,22 +83,6 @@
     color: #000;
     transition: .5s;
 }
-
-// scs section
-// #about-me-mobile {
-//     display: none;
-//     width: 100vw;
-//     height: 7em;
-//     z-index: 1;
-//     // position: fixed;
-//     top: 0;
-//     left: 0;
-//     justify-content: space-between;
-//     align-items: center;
-//     background-color: #d3d3d3d3;
-//     border-bottom: 3px solid #fff;
-//     flex-flow: row wrap;
-// }
 // Media quereies
 @media screen and (max-width: 1023px) {
     .mobile-nav {

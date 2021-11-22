@@ -11,6 +11,12 @@
     justify-content: space-evenly;
     font-size: 1.5rem;
 }
+.det-description {
+    margin-top: 5px;
+}
+.det {
+    border-top: solid 3px #fff;
+}
 // Media quiries 
 @media screen and (max-width: 767px) {
     #contact-info {
@@ -31,6 +37,7 @@
     .phone {
         position: relative;
         left: 0;
+        padding-bottom: 15px;
     }
     .details {
         text-decoration: none;
@@ -145,6 +152,9 @@
         flex-direction: row;
         margin-top: 50px;
         padding: 3rem 4rem 3rem;
+    }
+    .details h3:hover {
+        color: #8b0000;
     }
     .contact-info {
         font-size: 1.1rem;

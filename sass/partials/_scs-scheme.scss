@@ -39,9 +39,6 @@
     padding-top: 50px;
 }
 #scs-scheme .scs-intro {
-    // border-top: 3px solid #fff;
-    // border-right: 3px solid #fff;
-    // border-left: 3px solid #fff;
     border-bottom: 3px solid #fff;
 } 
 .scs-intro a {
@@ -91,4 +88,22 @@
     #scs-scheme .scs-intro .scs-title {
         width: 100%;
     }
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    #scs-scheme .scs-content {
+        width: 100%;
+        padding: 3rem 5rem 0rem 5rem;
+        text-align: left;
+        background-color: #000;
+    }
+    #scs-scheme .scs-intro {
+        align-items: center;
+        padding: 80px 10px 100px;
+    }
+        #scs-scheme .scs-intro .scs-title {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        left: 100px;
+        }
 }
