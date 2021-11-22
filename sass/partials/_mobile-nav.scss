@@ -3,15 +3,16 @@
     width: 100vw;
     height: 7em;
     z-index: 1;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     justify-content: space-between;
     align-items: center;
-    background-color: #d3d3d3d3;
+    background-color: #000;
     border-bottom: 3px solid #fff;
     flex-flow: row wrap;
 }
+
 .mobile-wrapper {
     display: flex;
     justify-content: space-between;
@@ -33,11 +34,14 @@
     width: 100px;
     height: 90px;
 }
-.mobile-nav .nav-initial .initial-containerm,.letters {
+.mobile-nav .nav-initial .initial-containerm, .letters {
     position: absolute;
     font-size: 2rem;
     top: 18px;
     left: 14px;
+}
+.letters {
+    color: #367588;
 }
 .hamburger {
     padding: 15px 30px;
@@ -56,9 +60,52 @@
     position: relative;
     padding-top: 5px;
 }
+
+// About Me Section
+#about-me-mobile {
+    display: none;
+    width: 100vw;
+    height: 7em;
+    z-index: 1;
+    // position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d3d3d3d3;
+    border-bottom: 3px solid #fff;
+    flex-flow: row wrap;
+}
+.initial-container:hover {
+    background-color: #367588;
+    transition: .5s;
+}
+.initial-container:hover * {
+    color: #000;
+    transition: .5s;
+}
+
+// scs section
+// #about-me-mobile {
+//     display: none;
+//     width: 100vw;
+//     height: 7em;
+//     z-index: 1;
+//     // position: fixed;
+//     top: 0;
+//     left: 0;
+//     justify-content: space-between;
+//     align-items: center;
+//     background-color: #d3d3d3d3;
+//     border-bottom: 3px solid #fff;
+//     flex-flow: row wrap;
+// }
 // Media quereies
 @media screen and (max-width: 1023px) {
     .mobile-nav {
+        display: flex;
+    }
+    #about-me-mobile {
         display: flex;
     }
 }

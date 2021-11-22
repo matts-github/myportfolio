@@ -39,6 +39,9 @@
 .project-view {
     color: #367588;
 }
+#homepage {
+    background-color: #000;
+}
 // Media quieres
 @media screen and (max-width: 767px) {
     .projects-content {
@@ -67,5 +70,8 @@
     .projects-content > * {
         flex: 1 1 33%;
         max-width: 30%;
+    }
+    #project-4, #project-5, #project-6{
+        margin-top: 50px;
     }
 }

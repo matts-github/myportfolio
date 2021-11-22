@@ -1,4 +1,4 @@
-.contact-content {
+#contact-content {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -13,7 +13,7 @@
 }
 // Media quiries 
 @media screen and (max-width: 767px) {
-    .contact-info {
+    #contact-info {
         margin-bottom: 20px;
         padding-top: 20px;
     }
@@ -24,11 +24,27 @@
     #contact {
         margin-bottom: 15px;
         padding-bottom: 2px;
-        color: #8b0000;
+        color: #367588;
+        position: relative;
+        left: 0;
+    }
+    .phone {
+        position: relative;
+        left: 0;
     }
     .details {
         text-decoration: none;
-        color: #8b0000;
+        color: #367588;
+        position: relative;
+        top: 10px;
+        margin-bottom: 50px;
+    }
+    .details .email {
+        position: relative;
+        top: 10px;
+        margin-bottom: 15px;
+        left: 0;
+        padding-bottom: 50px;
     }
     .form-name {
         display: flex;
@@ -101,7 +117,7 @@
         text-decoration: none;
         transition: 0.5s;
     }
-    .wrapper main, .scroll-up:hover > * {
+    .wrapper main .scroll-up:hover > * {
         color: #8b0000;
     }
     .scroll-up, i:hover {
@@ -125,7 +141,7 @@
     }
 @media screen and (min-width: 768px) {
 
-    .contact-content {
+    #contact-content {
         flex-direction: row;
         margin-top: 50px;
         padding: 3rem 4rem 3rem;
@@ -140,6 +156,20 @@
     .form-name {
         display: flex;
         flex-direction: row;
+    }
+    .details .phone {
+        position: relative;
+        right: 135px;
+        top: 50px;
+    }
+    .details .email {
+        position: relative;
+        right: 12px;
+        top: 50px;
+        margin-bottom: 50px;
+    }
+    .email {
+        margin-bottom: 10px;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {

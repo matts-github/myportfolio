@@ -15,6 +15,9 @@ nav {
     background-color: #000;
     border-right: 3px solid #fff;
 }
+.nav-list {
+    text-align: center;
+}
 nav .nav-content {
     width: 100%;
 }
@@ -31,12 +34,12 @@ nav .nav-initial .initial-container{
     position: relative;
     margin: 15px 0;
     color: #367588;
-    border: 5px solid #367588;
+    border: 7px solid #367588;
     width: 100px;
     height: 100px;
+    transition: .5s;
 }
 nav .nav-initial .initial-container:hover > * {
-    background-color: #367588;
     color: #000;
 }
 nav .nav-initial .initial-container:hover {
@@ -47,6 +50,7 @@ nav .nav-initial .initial-container .letters {
     font-size: 2rem;
     top: 22px;
     left: 18px;
+    transition: .5s;
 }
 nav .nav-initial .initial-container .letters:hover {
     position: absolute;

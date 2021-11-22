@@ -4,6 +4,9 @@
 @import 'partials/mobile-nav.scss';
 @import 'partials/projects.scss';
 @import 'partials/nav-bar.scss';
+@import 'partials/about-profile.scss';
+@import 'partials/coding-examples.scss';
+@import 'partials/scs-scheme.scss';
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,17 +14,20 @@
     font-family: sans-serif;
 }
 main {
-    background-color: #d3d3d3d3;
-    padding-bottom: 3rem;
+    // background-color: #000;
+    // padding-bottom: 3rem;
 }
 .wrapper main {
-    background-color: #000;
-    padding-bottom: 3rem;
+    // background-color: #000;
+    // padding-bottom: 3rem;
+}
+#about-me {
+    text-align: center;
 }
 // Media queires
 @media screen and (max-width: 1023px) {
     .wrapper main {
-        margin-top: 7px;
+        // margin-top: 7px;
     }
 }
 @media screen and (min-width: 1024px) {
