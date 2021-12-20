@@ -68,6 +68,16 @@ body {
     .img-container .inner-container {
         height: 93vh;
     }
+    #sidebar {
+        display: none;
+        position: absolute;
+        width: 300px;
+        // height: 520%;
+        background: #000;
+        left: -300px;
+        z-index: 1000;
+        transition: .4s;
+    }
 
 }
 // About Me Section

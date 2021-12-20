@@ -21,6 +21,8 @@ function loop () {
 
 loop()
 
+// Sidebar menu
+
 function show() {
     document.getElementById('sidebar').classList.toggle('active');
 }
@@ -95,20 +97,19 @@ form.addEventListener('submit', (e) => {
 })
 
 // Regex check
+function validate(){
+    var mail = document.getElementById("text").value;
 
-// let email = document.getElementById('email');
-// let span = getElementByTagName('span');
+    var regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
 
-// email.onekeydown = function(){
-//     const regex = /^([\.\_a-zA-Z0-9]+)@([a-zA-Z]+)([a-zA-Z]){2,8}$/;
-//     const regexo = /^([\.\_a-zA-Z0-9]+)@([a-zA-Z]+)([a-zA-Z]){2,3}\.[a-zA-Z]{1,3}$/;
-//     if (regex.test(email.value) || regexo.test(email.value)) 
-//     {
-//         span[0].innerText = "Your email is valid";
-//         span[0].style.color = 'lime';
-//     }
-//     else {
-//         span[0].innerText = "Your email is Invalid";
-//         span[0].style.color = 'red';
-//     }
-// }
+    if(regx.test(mail)){
+        alert("You have provided a valid email ID")
+        return true;
+    }
+    else{
+        alert("Sorry! Incorrect email ID")
+        return false;
+    }
+
+}
+

@@ -8,6 +8,31 @@
         <script src="https://kit.fontawesome.com/1629a23b6c.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <div id="sidebar">
+            <div class="hamburger" onclick="show()">
+                <i class="fas fa-bars fa-3x"></i>  
+            </div>
+
+            <div class="nav-content">
+                <a href="index.html" class="nav-initial">
+                    <div class="initial-container">
+                        <h2 class="letters">MW</h2>
+                    </div>
+                </a>
+                <ul class="nav-list">
+                    <li><a href="about-me.html">About Me</a></li>
+                    <li><a href="index.html#projects">My Portfolio</a></li>
+                    <li><a href="coding-examples.html">Coding Examples</a></li>
+                    <li><a href="SCS-Scheme.html">SCS Scheme</a></li>
+                    <li class="contact-nav"><a href="index.html#contact-content">Contact Me</a></li>
+                </ul>
+                <ul class="nav-social">
+                    <li><a href="https://en-gb.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://uk.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
         <div id="about-me" class="wrapper">
             <!-- Mobile Nav -->
             <div class="mobile-nav">
@@ -37,7 +62,7 @@
                                 <p>
                                     I am currently a trainee developer on the Scion Coalition Scheme at Netmatters.
                                     I started in September 2021.<br>
-                                    I am currently learning Web Design using HTML and CSS.
+                                    I am currently learning Web Design using HTML, CSS and JavaScript.
                                 </p>
                             </div>
                             <!-- <div class="image-container">
@@ -83,5 +108,6 @@
             </nav>
             <!-- Nav bar end -->
         </div>
+        <script src="js/app.js"></script>
     </body>
 </html>

@@ -180,18 +180,18 @@
                                     <a class="details" href="#"><h3 class="email">mattwoodhouse@live.co.uk</h3></a>
                                 </div>
                         </div>
-                        <div id="error"></div>
                         <form id="contact-form" method="POST" action accept-charset="utf-8">
                             <div class="form-name">
                                 <div class="fname">
                                     <input type="text" id="first-name" name="first-name" class="style-input" placeholder="First Name">
                                 </div>
+                                <div id="error"></div>
                                 <div class="lname">
                                     <input type="text" id="last-name" name="last-name" class="style-input" placeholder="Last Name">
                                 </div>
                             </div>
                             <div class="email">
-                                <input type="email" id="email" name="email" class="style-input" placeholder="Email">
+                                <input type="text" id="text" name="email" class="style-input" placeholder="Email">
                             </div>
                             <div>
                                 <div class="subject">
@@ -199,7 +199,7 @@
                                 </div>
                             </div>
                             <textarea name="message" id="message" class="style-input" cols="22" rows="6" placeholder="Message"></textarea>
-                            <button class="btn">Submit</button>
+                            <button onclick="validate()" class="btn">Submit</button>
                         </form>
                     </div>
                     <!-- Contact Me Section End -->
