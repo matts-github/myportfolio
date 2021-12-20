@@ -14,7 +14,7 @@
 }
 
 .mobile-wrapper {
-    display: flex;
+    display: none;
     justify-content: space-between;
     flex-wrap: wrap;
     order: 1;
@@ -36,9 +36,9 @@
 }
 .mobile-nav .nav-initial .initial-containerm, .letters {
     position: absolute;
-    font-size: 2rem;
+    font-size: 3rem;
     top: 18px;
-    left: 14px;
+    left: 100px;
 }
 .letters {
     color: #367588;

@@ -39,6 +39,16 @@ nav .nav-initial .initial-container{
     height: 100px;
     transition: .5s;
 }
+.nav-initial .initial-container{
+    position: relative;
+    margin: 15px 0;
+    color: #367588;
+    border: 7px solid #367588;
+    width: 100%;
+    height: 100px;
+    transition: .5s;
+    // margin-left: 50px;
+}
 nav .nav-initial .initial-container:hover > * {
     color: #000;
 }

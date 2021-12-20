@@ -157,6 +157,14 @@
     }
 @media screen and (min-width: 768px) {
 
+     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        #contact-content {
+            flex-direction: row;
+            margin-top: 50px;
+            padding: 3rem 4rem 3rem;
+            padding-left: 500px;
+        }
+     }
     #contact-content {
         flex-direction: row;
         margin-top: 50px;
