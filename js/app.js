@@ -118,19 +118,4 @@ function validation()
         text.style.color = "#ff0000";
     }
 }
-// function validate(){
-//     var mail = document.getElementById("email").value;
-
-    // var regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
-
-//     if(regx.email(mail)){
-//         document.span.innerHTML = "Correct Email";
-//         return true;
-//     }
-//     else{
-//         document.span.innerHTML = "Incorrect Email";
-//         return false;
-//     }
-
-// }
 
