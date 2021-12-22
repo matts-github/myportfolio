@@ -97,19 +97,40 @@ form.addEventListener('submit', (e) => {
 })
 
 // Regex check
-function validate(){
-    var mail = document.getElementById("text").value;
+function validation()
+{
 
-    var regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
+    var email = document.getElementById("email").value;
+    var pattern = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
 
-    if(regx.test(mail)){
-        alert("You have provided a valid email ID")
-        return true;
+    if (email.match(pattern))
+    {
+        form.classList.add("valid")
+        form.classList.remove("invalid")
+        text.innerHTML = "Your Email Address in Valid.";
+        text.style.color = "#00ff00";
     }
-    else{
-        alert("Sorry! Incorrect email ID")
-        return false;
+    else
+    {
+        form.classList.remove("valid")
+        form.classList.add("invalid")
+        text.innerHTML = "Please Enter Valid Email Address.";
+        text.style.color = "#ff0000";
     }
-
 }
+// function validate(){
+//     var mail = document.getElementById("email").value;
+
+    // var regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
+
+//     if(regx.email(mail)){
+//         document.span.innerHTML = "Correct Email";
+//         return true;
+//     }
+//     else{
+//         document.span.innerHTML = "Incorrect Email";
+//         return false;
+//     }
+
+// }
 
