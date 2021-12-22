@@ -41,12 +41,15 @@ body {
     font-size: 1.5rem;
     color: #fff;
 }
-.scroll-down:hover > * {
-    color: #8b0000;
-}
-.scroll-down a:hover {
-    color: #8b0000;
-}
+// .scroll-down:hover a > * {
+//     color: #8b0000;
+// }
+// .scroll-down:hover > * a {
+//     color: #8b0000;
+// }
+// .scroll-down a:hover {
+//     color: #8b0000;
+// }
 // Media queires
 @media screen and (min-width: 426px) {
     .inner-container, h1 {

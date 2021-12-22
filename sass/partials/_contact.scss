@@ -129,7 +129,7 @@
     }
     .scroll-up, a {
         color: #fff;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         text-decoration: none;
         transition: 0.5s;
     }
@@ -142,6 +142,7 @@
     .scroll-up, a:hover {
         color: #8b0000;
     }
+    
     .contact-form {
         width: 100%;
         max-width: 100%;
@@ -226,4 +227,10 @@
     .contact-info {
         font-size: 1.1rem;
     }
+}
+.scroll-down, a:hover {
+    color: #8b0000;
+}
+.scroll-down, i:hover {
+    color: #8b0000;
 }
