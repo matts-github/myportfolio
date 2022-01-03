@@ -3,7 +3,7 @@
 } 
 #scs-scheme .scs-content {
     width: 100%;
-    padding: 3rem 5rem 0rem 5rem;
+    padding: 3rem 2rem 0rem 2rem;
     text-align: left;
     background-color: #000;
 }
@@ -36,7 +36,7 @@
 }
 #scs-scheme header {
     font-size: 3rem;
-    padding-left: 135px;
+    // padding-left: 135px;
     padding-top: 50px;
 }
 #scs-scheme .scs-intro {
@@ -110,4 +110,9 @@
         position: relative;
         left: 100px;
         }
+}
+@media screen and (max-width: 205px) {
+    #scs-scheme header h2 {
+        font-size: 2rem;
+    }
 }

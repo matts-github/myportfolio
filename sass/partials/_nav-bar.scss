@@ -89,3 +89,12 @@ nav .nav-initial .initial-container .letters:hover {
         display: flex;
     }
 }
+#slide-out {
+    position: relative;
+    margin: 15px 0;
+    color: #367588;
+    // border: 7px solid #367588;
+    width: 100%;
+    height: 100px;
+    transition: .5s;
+}

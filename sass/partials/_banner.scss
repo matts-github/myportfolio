@@ -1,8 +1,15 @@
 body {
     width: 100%;
 }
+
+:root{
+    --primary: hsla(0, 0%, 18%, .65);
+    --secondary: hsla(30, 1%, 37%, .65);
+}
+
 .img-container {
-    background-image: url(../img/banner.jpg);
+    background-image: linear-gradient(135deg, var(--primary), var(--secondary)),
+        url(../img/banner.jpg);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,15 +93,9 @@ body {
 // About Me Section
 #about-me header {
     font-size: 3rem;
-    padding-left: 135px;
+    // padding-left: 135px;
     padding-top: 50px;
     background-image: url(../img/banner.jpg);
-}
-.bar {
-    position: relative;
-    top: -30px;
-    left: -70px;
-    color: #fff;
 }
 .about-content h2{
     color: #367588;
@@ -105,15 +106,9 @@ body {
 // Codeing Examples
 #coding-examples header {
     font-size: 3rem;
-    padding-left: 135px;
+    // padding-left: 135px;
     padding-top: 50px;
     background-image: url(../img/banner.jpg);
-}
-.bar {
-    position: relative;
-    top: -30px;
-    left: -70px;
-    color: #fff;
 }
 .about-content h2{
     color: #367588;
@@ -124,14 +119,14 @@ body {
 // SCS Scheme
 #SCS-Scheme header {
     font-size: 3rem;
-    padding-left: 135px;
+    // padding-left: 135px;
     padding-top: 50px;
     background-image: url(../img/banner.jpg);
 }
 .bar {
     position: relative;
     top: -30px;
-    left: -70px;
+    // left: -70px;
     color: #fff;
 }
 .about-content h2{
@@ -139,4 +134,9 @@ body {
 }
 .content {
     color: #367588;
+}
+@media screen and (max-width: 333px) {
+    .bar {
+        font-size: 2rem;
+    }
 }

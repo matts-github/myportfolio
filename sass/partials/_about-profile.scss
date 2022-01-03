@@ -52,7 +52,7 @@
 }
 .about-text {
     position: relative;
-    top: -100px;
+    top: -50px;
 }
 .initial-container:hover {
     background-color: #367588;
@@ -107,5 +107,15 @@
         font-size: 1.5rem;
         color: #fff;
         border-bottom: 3px solid #fff;
+    }
+}
+#about-title {
+    position: relative;
+    top: -30px;
+    color: #fff;
+}
+@media screen and (max-width: 233px) {
+    #about-title {
+        font-size: 2rem;
     }
 }

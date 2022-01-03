@@ -1,5 +1,5 @@
 const textDisplay = document.getElementById('typewritter')
-const phrases = ['I am a software developer', 'I love to code', 'I love to teach code.']
+const phrases = ['I am a software developer']
 let i = 0
 let j = 0
 let curentPhrase = []
@@ -23,11 +23,55 @@ loop()
 
 // Sidebar menu
 
+// const menu_btn = document.querySelector('.hamburger'); 
+
+// menu_btn.addEventListener('click', function() {
+//     menu_btn.classList.toggle('is-active')
+// })
+
+
+
+
+
+
 function show() {
     document.getElementById('sidebar').classList.toggle('active');
 }
 
 // Form validation
+
+
+// let id = (id) => document.getElementById(id); 
+
+
+// let fname = document.id("first-name"),
+//   lname = document.id("last-name"),
+//   email = document.id("email"),
+//   message = document.id("message"),
+//   errorMsg = document.getElementsByClassName("error");
+
+//   form.addEventListener("submit", (e)=>{
+//     e.preventDefualt();
+//     errorMsg[2].innerHTML = "wroijrojgasirjgipsajg";
+//   })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const fname = document.getElementById('first-name')
 const lname = document.getElementById('last-name')
@@ -35,7 +79,7 @@ const email = document.getElementById('email')
 const subject = document.getElementById('subject')
 const message = document.getElementById('message')
 const form = document.getElementById('contact-form')
-const errorElement = document.getElementById('error')
+const errorElement = document.getElementsByClassName('error')
 
 
 
@@ -48,7 +92,7 @@ form.addEventListener('submit', (e) => {
 
     if (messages.length > 0) {
     e.preventDefault()
-    errorElement.innerText = messages.join(', ')
+    errorElement[4].innerText = messages.join(', ')
     }
 })
 form.addEventListener('submit', (e) => {
@@ -59,7 +103,7 @@ form.addEventListener('submit', (e) => {
 
     if (messages.length > 0) {
     e.preventDefault()
-    errorElement.innerText = messages.join(', ')
+    errorElement[3].innerText = messages.join(', ')
     }
 })
 form.addEventListener('submit', (e) => {
@@ -70,7 +114,7 @@ form.addEventListener('submit', (e) => {
 
     if (messages.length > 0) {
     e.preventDefault()
-    errorElement.innerText = messages.join(', ')
+    errorElement[2].innerText = messages.join(', ')
     }
 })
 form.addEventListener('submit', (e) => {
@@ -81,7 +125,7 @@ form.addEventListener('submit', (e) => {
 
     if (messages.length > 0) {
     e.preventDefault()
-    errorElement.innerText = messages.join(', ')
+    errorElement[1].innerText = messages.join(', ')
     }
 })
 form.addEventListener('submit', (e) => {
@@ -92,7 +136,7 @@ form.addEventListener('submit', (e) => {
 
     if (messages.length > 0) {
     e.preventDefault()
-    errorElement.innerText = messages.join(', ')
+    errorElement[0].innerText = messages.join(', ')
     }
 })
 

@@ -15,7 +15,7 @@
     margin-top: 5px;
 }
 .det {
-    border-top: solid 3px #fff;
+    // border-top: solid 3px #fff;
 }
 // Media quiries 
 @media screen and (max-width: 767px) {
@@ -111,7 +111,7 @@
         margin-left: 10px;
     }
     .btn:hover {
-        background-color: #8b0000;
+        background-color: #fff;
     }
     // button
     .scroll-up {
@@ -134,13 +134,13 @@
         transition: 0.5s;
     }
     .wrapper main .scroll-up:hover > * {
-        color: #8b0000;
+        color: #367588;
     }
     .scroll-up, i:hover {
-        color: #8b0000;
+        color: #367588;
     }
     .scroll-up, a:hover {
-        color: #8b0000;
+        color: #367588;
     }
     
     .contact-form {
@@ -190,7 +190,7 @@
         width: 92%;
     }
     .details h3:hover {
-        color: #8b0000;
+        color: #fff;
     }
     .contact-info {
         font-size: 1.1rem;
@@ -229,8 +229,8 @@
     }
 }
 .scroll-down, a:hover {
-    color: #8b0000;
+    color: #fff;
 }
 .scroll-down, i:hover {
-    color: #8b0000;
+    color: #fff;
 }

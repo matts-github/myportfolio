@@ -2,8 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Portfolio</title>
+        <title>Matt Woodhouse - Portfolio</title>
+        <link rel="shortcut icon" type="img/jpg" href="img/fav.jpg">
         <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <meta name="description" content="Trainee Web Developer - Matt Woodhouse. This page contains links to my projects. My experience
+        so far includes HTML, CSS and some JavaScript.">
         <link rel="stylesheet" href="css/style.css">
         <script src="https://kit.fontawesome.com/1629a23b6c.js" crossorigin="anonymous"></script>
     </head>
@@ -18,7 +21,7 @@
     
                 <div class="nav-content">
                     <a href="#" class="nav-initial">
-                        <div class="initial-container">
+                        <div id="slide-out">
                             <h2 class="letters">MW</h2>
                         </div>
                     </a>
@@ -40,22 +43,23 @@
             <div class="mobile-nav">
                 <div class="mobile-wrapper">
                     <a href="#" class="nav-initial">
-                        <div class="initial-container">
+                        <div class="">
                             <h2 class="letters">MW</h2>
                         </div>
                     </a>
                     <div id="sidebar">
-                        <div class="hamburger">
-                            <i class="fas fa-bars fa-3x"></i>  
-                        </div>
+                      
 
-                        <ul>
+                        <!-- <ul>
                             <li>About Me</li>
                             <li>My Portfolio</li>
                             <li>Coding Examples</li>
                             <li>SCS Scheme</li>
                             <li>Contact Me</li>
-                        </ul>
+                        </ul> -->
+                        <button class="hamburger">
+                            <i class="fas fa-bars fa-3x"></i>  
+                        </button>
                     </div>
                 </div>
             </div>
@@ -180,27 +184,51 @@
                                     <a class="details" href="#"><h3 class="email">mattwoodhouse@live.co.uk</h3></a>
                                 </div>
                         </div>
+                       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         <form id="contact-form" method="POST" action accept-charset="utf-8">
-                            <div id="error"></div>
+                            
                             <span id="text"></span>
                             <div class="form-name">
                                 <div class="fname">
                                     <input type="text" id="first-name" name="first-name" class="style-input" placeholder="First Name">
+                                    <div class="error"></div>
                                 </div>
+                                
                                 <div class="lname">
                                     <input type="text" id="last-name" name="last-name" class="style-input" placeholder="Last Name">
+                                    <div class="error"></div>
                                 </div>
                             </div>
                             <div class="email">
                                 <input type="text" id="email" name="email" class="style-input" placeholder="Email" onkeydown="validation()">
+                                <div class="error"></div>
                             </div>
                             <div>
                                 <div class="subject">
                                     <input type="text" id="subject" name="subject" class="style-input" placeholder="Subject">
+                                    <div class="error"></div>
                                 </div>
                             </div>
                             <textarea name="message" id="message" class="style-input" cols="22" rows="6" placeholder="Message"></textarea>
-                            <div id="error"></div>
+                            <div class="error"></div>
                             <button class="btn">Submit</button>
                         </form>
                     </div>
