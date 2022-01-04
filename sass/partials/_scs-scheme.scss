@@ -15,8 +15,8 @@
 #scs-scheme .scs-intro .scs-title {
     display: flex;
     justify-content: center;
-    color: #367588;
-    font-size: 1.5rem;
+    color: #fff;
+    font-size: 2rem;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -38,6 +38,7 @@
     font-size: 3rem;
     // padding-left: 135px;
     padding-top: 50px;
+    margin-bottom: 50px;
 }
 #scs-scheme .scs-intro {
     border-bottom: 3px solid #fff;
@@ -46,14 +47,14 @@
     border-bottom: none;
 }
 .scs-intro a {
-    color: aquamarine;
+    color: #367588;
     position: relative;
 }
 .scs-intro a:hover {
-    color: #8b0000;
+    color: #fff;
 }
 .scs-intro ul {
-    color: #367588;
+    color: #fff;
     position: relative;
     left: 10px;
     padding-right: 10px;
@@ -61,7 +62,8 @@
     margin-top: 15px;
 }
 .scs-intro p {
-    color: #367588;
+    color: #fff;
+    font-size: 1.2rem;
 }
 @media screen and (min-width: 768px) {
     #scs-scheme .scs-intro .scs-title {
