@@ -1,5 +1,5 @@
 const textDisplay = document.getElementById('typewritter')
-const phrases = ['I am a software developer']
+const phrases = ['I am a software developerr']
 let i = 0
 let j = 0
 let curentPhrase = []
