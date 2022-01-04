@@ -27,6 +27,12 @@
     object-position: center top;
     vertical-align: top;
     transform-origin: top;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.215, 0.61, 0.255, 1);
+}
+.projects-content .project-img:hover {
+    opacity: .75;
+    transform: scale(1.1);
 }
 .projects-content .description {
     font-size: 1.5rem;
@@ -73,5 +79,13 @@
     }
     #project-4, #project-5, #project-6{
         margin-top: 50px;
+    }
+    .details .email {
+        position: relative;
+        top: 10px;
+        margin-bottom: 15px;
+        left: -10px;
+        padding-bottom: 50px;
+        font-size: 2vw;
     }
 }

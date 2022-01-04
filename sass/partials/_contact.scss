@@ -38,6 +38,7 @@
         position: relative;
         left: 0;
         padding-bottom: 15px;
+        font-size: 3vw;
     }
     .details {
         text-decoration: none;
@@ -52,6 +53,7 @@
         margin-bottom: 15px;
         left: -10px;
         padding-bottom: 50px;
+        font-size: 3vw;
     }
     .form-name {
         display: flex;
@@ -59,14 +61,14 @@
     }
     .form-name .fname {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin-right: 10px;
         margin-left: 10px;
         width: 50%;
     }
     .form-name .lname {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin-right: 10px;
         margin-left: 10px;
         width: 50%;
@@ -85,14 +87,15 @@
     }
     .email {
         display: flex;
-        flex-direction: row;
-        font-size: 1.5rem;
+        flex-direction: column;
+        // font-size: 1.5rem; only want this in the email details
         margin-left: 10px;
         width: 100%;
+        // font-size: 6vw; only want this in the email details
     }
     .subject {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin-left: 10px;
         width: 100%;
     }
@@ -173,14 +176,14 @@
     }
     .email {
         display: flex;
-        flex-direction: row;
-        font-size: 1.5rem;
+        flex-direction: column;
+        // font-size: 1.5rem; only want this in email details
         margin-left: 10px;
         width: 97%;
     }
     .subject {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin-left: 10px;
         width: 97%;
     }
@@ -207,15 +210,25 @@
         position: relative;
         right: 135px;
         top: 0;
+        font-size: 3vh;
     }
     .details .email {
         position: relative;
         left: -10px;
         top: 0;
         margin-bottom: 50px;
+        font-size: 3vw;
     }
     .email {
-        margin-bottom: 10px;
+        // margin-bottom: 10px;
+    }
+    .message {
+            display: flex;
+            flex-direction: column;
+            width: 97%;
+    }
+    .message .error {
+        margin-left: 10px;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
