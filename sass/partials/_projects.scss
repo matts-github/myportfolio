@@ -29,6 +29,7 @@
     transform-origin: top;
     cursor: pointer;
     transition: all 0.25s cubic-bezier(0.215, 0.61, 0.255, 1);
+    padding-top: 5px;
 }
 .projects-content .project-img:hover {
     opacity: .75;
