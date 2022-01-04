@@ -237,3 +237,51 @@ html, body {
     font-size: 2rem;
     text-align: center;
 }
+@media screen and (min-width: 992px) {
+    #projects {
+        padding: 2rem 2rem 0rem 5rem;
+    }
+}
+@media screen and (min-width: 1440px) {
+    #about-me .about-text p {
+        font-size: 1.5rem;
+        color: #fff;
+        border-bottom: 3px solid #fff;
+        width: 70%;
+        margin-left: 200px;
+    }
+    #scs-scheme .scs-intro {
+        border-bottom: 3px solid #fff;
+        width: 80%;
+        margin-left: 140px;
+    }
+}
+.ph {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.ph .det-description {
+    display: inline;
+    margin-top: 5px;
+}
+.ph .details .phone {
+    display: inline-block;
+    top: -10px;
+}
+.em {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.em .det-description {
+    display: inline;
+    margin-top: 5px;
+}
+.em .details .email {
+    display: inline-block;
+    // top: -10px;
+}
+.nav-social i:hover {
+    color: #367588;
+}

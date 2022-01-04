@@ -21,13 +21,7 @@ function loop () {
 
 loop()
 
-// Sidebar menu
 
-// const menu_btn = document.querySelector('.hamburger'); 
-
-// menu_btn.addEventListener('click', function() {
-//     menu_btn.classList.toggle('is-active')
-// })
 
 
 
@@ -39,39 +33,6 @@ function show() {
 }
 
 // Form validation
-
-
-// let id = (id) => document.getElementById(id); 
-
-
-// let fname = document.id("first-name"),
-//   lname = document.id("last-name"),
-//   email = document.id("email"),
-//   message = document.id("message"),
-//   errorMsg = document.getElementsByClassName("error");
-
-//   form.addEventListener("submit", (e)=>{
-//     e.preventDefualt();
-//     errorMsg[2].innerHTML = "wroijrojgasirjgipsajg";
-//   })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 const fname = document.getElementById('first-name')
 const lname = document.getElementById('last-name')
