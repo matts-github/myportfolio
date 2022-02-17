@@ -58,10 +58,24 @@ body {
 //     color: #8b0000;
 // }
 // Media queires
+code {
+    color: #367588;
+    font-size: 1.2rem;
+}
 @media screen and (min-width: 426px) {
     .inner-container, h1 {
         font-size: 2.5rem;
         text-align: center;
+    }
+    code {
+        color: #367588;
+        font-size: 1.4rem;
+    } 
+}
+@media screen and (min-width: 540px) {
+    code {
+        color: #367588;
+        font-size: 1.7rem;
     }
 }
 @media screen and (min-width: 768px) {
@@ -72,6 +86,10 @@ body {
     .img-container span {
         font-size: 2rem;
         margin-top: 1.5rem;
+    }
+    code {
+        color: #367588;
+        font-size: 2.5rem;
     }
 }
 @media screen and (min-width: 1024px) {

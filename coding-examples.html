@@ -29,9 +29,7 @@
                     <li class="contact-nav"><a href="index.html#contact-content">Contact Me</a></li>
                 </ul>
                 <ul class="nav-social">
-                    <li><a href="https://en-gb.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
                     <li><a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://uk.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -59,7 +57,33 @@
                 <!-- Comming Soon... -->
                 <div class="coming-soon">
                     <h2 id="example-description">Here is an example of the JavaScript used to create the typewritter effect for this website.</h2>
-                    <img src="img/type.png" alt="">
+                    <code>const textDisplay = document.getElementById('typewritter')
+                        const phrases = ['I am a software developerr']
+                        let i = 0
+                        let j = 0
+                        let curentPhrase = []
+                        function loop () {
+                            
+                            if (i < phrases.length) {
+                                textDisplay.innerHTML = curentPhrase.join('')
+                                if (j <= phrases[i].length) {
+                                    curentPhrase.push(phrases[i][j])
+                                    j++
+                                }
+                        
+                                if (j == phrases[i].length) {
+                                    i++
+                                }
+                            }
+                            setTimeout(loop, 500)
+                        }
+                        
+                        loop()
+                    </code>
+                </div>
+
+                <div>
+                    <span class="about-me" id="typewritter"></span>
                 </div>
 
                 <!-- Comming Soon End -->
@@ -80,9 +104,7 @@
                         <li class="contact-nav"><a href="index.html#contact-content">Contact Me</a></li>
                     </ul>
                     <ul class="nav-social">
-                        <li><a href="https://en-gb.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
                         <li><a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a></li>
-                        <li><a href="https://uk.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                     </ul>
                 </div>
             </nav>
