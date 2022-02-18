@@ -308,3 +308,15 @@ html, body {
         font-size: 1.5rem;
     }
 }
+input.invalid {
+    border: 1px solid red;
+}
+.hidden {
+    display: none;
+}
+.thank-you {
+    color: #fff;
+    padding: 40px;
+    font-size: 32px;
+    text-align: center;
+}

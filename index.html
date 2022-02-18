@@ -209,31 +209,34 @@
                             <div class="form-name">
                                 <div class="fname">
                                     <input type="text" id="first-name" name="first-name" class="style-input" placeholder="First Name">
-                                    <div class="error"></div>
+                                    <div class="error hidden">Your First Name is required</div>
                                 </div>
                                 
                                 <div class="lname">
                                     <input type="text" id="last-name" name="last-name" class="style-input" placeholder="Last Name">
-                                    <div class="error"></div>
+                                    <div class="error hidden">Your Last Name is Invalid</div>
                                 </div>
                             </div>
                             <div class="email">
                                 <span id="text"></span>
                                 <input type="text" id="email" name="email" class="style-input" placeholder="Email">
-                                <div class="error"></div>
+                                <div class="error hidden">Your Email is invalid</div>
                             </div>
                             <div>
                                 <div class="subject">
                                     <input type="text" id="subject" name="subject" class="style-input" placeholder="Subject">
-                                    <div class="error"></div>
+                                    <div class="error hidden">Subject is Required</div>
                                 </div>
                             </div>
                             <div class="message">
                                 <textarea name="message" id="message" class="style-input" cols="22" rows="6" placeholder="Message"></textarea>
-                                <div class="error"></div>
+                                <div class="error hidden">Message is Required</div>
                             </div>
-                            <button class="btn" onclick="validation()">Submit</button>
+                            <button class="btn">Submit</button>
                         </form>
+                        <div class="thank-you hidden">
+                            Thank you for sumbiting info!
+                        </div>
                     </div>
                     <!-- Contact Me Section End -->
                 </section>
