@@ -59,7 +59,13 @@ const emailInput = document.querySelector(
     'input[name="email"]'
 );
 
+const inputs = [
+    nameInput,
+    emailInput,
+]
+
 let isFormValid = false;
+let isValidationOn = false;
 
 const resetElm = (elm) => {
     elm.classList.remove('invalid');
@@ -67,11 +73,13 @@ const resetElm = (elm) => {
 }
 
 const invalidateElm = (elm) => {
-    nameInput.classList.add("invalid");
-    nameInput.nextElementSibling.classList.remove("hidden");
+    elm.classList.add("invalid");
+    elm.nextElementSibling.classList.remove("hidden");
 }
 
 const validateInputs = () => {
+    if (!isValidationOn) return;
+
     isFormValid = true;
     resetElm(nameInput);
     resetElm(emailInput);
@@ -83,13 +91,13 @@ const validateInputs = () => {
 
     if (!isValidEmail(emailInput.value)) {
         isFormValid = false;
-        console.log("hello");
         invalidateElm(emailInput);
     }
 };
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
+    isValidationOn = true;
     validateInputs();
     if (isFormValid) {
         form.remove();
@@ -97,8 +105,10 @@ form.addEventListener('submit', (e) => {
     }
 });
 
-nameInput.addEventListener('input', () => {
-    validateInputs();
+inputs.forEach(input => {
+    input.addEventListener('input', () => {
+        validateInputs();
+    });
 });
 
 
