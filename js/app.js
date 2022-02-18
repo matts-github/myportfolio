@@ -58,10 +58,15 @@ const nameInput = document.querySelector(
 const emailInput = document.querySelector(
     'input[name="email"]'
 );
+const lastNameInput = document.querySelector(
+    'input[name="last-name"]'
+);
+
 
 const inputs = [
     nameInput,
     emailInput,
+    lastNameInput
 ]
 
 let isFormValid = false;
@@ -81,18 +86,22 @@ const validateInputs = () => {
     if (!isValidationOn) return;
 
     isFormValid = true;
-    resetElm(nameInput);
-    resetElm(emailInput);
+    inputs.forEach(resetElm);
 
     if (!nameInput.value) {
         isFormValid = false;
         invalidateElm(nameInput);
+    }
+    if (!lastNameInput.value) {
+        isFormValid = false;
+        invalidateElm(lastNameInput);
     }
 
     if (!isValidEmail(emailInput.value)) {
         isFormValid = false;
         invalidateElm(emailInput);
     }
+    
 };
 
 form.addEventListener('submit', (e) => {
