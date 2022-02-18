@@ -64,13 +64,17 @@ const lastNameInput = document.querySelector(
 const subjectInput = document.querySelector(
     'input[name="subject"]'
 );
+const messageInput = document.querySelector(
+    'textarea[name="message"]'
+);
 
 
 const inputs = [
     nameInput,
     emailInput,
     lastNameInput,
-    subjectInput
+    subjectInput,
+    messageInput
 ]
 
 let isFormValid = false;
@@ -104,7 +108,10 @@ const validateInputs = () => {
         isFormValid = false;
         invalidateElm(subjectInput);
     }
-
+    if (!messageInput.value) {
+        isFormValid = false;
+        invalidateElm(messageInput);
+    }
     if (!isValidEmail(emailInput.value)) {
         isFormValid = false;
         invalidateElm(emailInput);
