@@ -260,7 +260,7 @@ html, body {
 .ph {
     display: inline-block;
     padding-top: 20px;
-    padding-bottom: 50px;
+    // padding-bottom: 50px;
 }
 .ph .det-description {
     display: inline;
@@ -271,9 +271,9 @@ html, body {
     top: -10px;
 }
 .em {
-    display: inline-block;
-    padding-top: 20px;
-    padding-bottom: 50px;
+    // display: inline-block;
+    // padding-top: 20px;
+    // padding-bottom: 50px;
 }
 .em .det-description {
     display: inline;
@@ -288,4 +288,23 @@ html, body {
 }
 #typewritter {
     color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .details .phone {
+        position: relative;
+        right: 135px;
+        top: 0;
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .details .email {
+        position: relative;
+        top: 10px;
+        margin-bottom: 15px;
+        left: -10px;
+        padding-bottom: 50px;
+        font-size: 1.5rem;
+    }
 }
