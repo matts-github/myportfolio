@@ -55,3 +55,65 @@
         font-size: 5rem;
     }
 }
+#ref {
+    color: #fff;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+#ref-1 {
+    color: #fff;
+    margin-top: 10px;
+}
+
+pre {
+    color: #fff;
+}
+
+.coming-soon {
+    margin-left: 50px;
+}
+h2 {
+    color: #fff;
+}
+p {
+    color: #fff;
+}
+// #outer_exp {
+//     margin-left: 50px;
+//     margin-right: 50px;
+// }
+
+#outer_img {
+    margin: 50px;
+}
+#outer_description {
+    margin: 50px;
+}
+
+table {
+    color: #fff;
+    background-color: #367588;
+    margin-left: auto;
+    margin-right: auto;
+    border: #367588;
+    width: 100%;
+}
+thead {
+    background-color: grey;
+}
+
+#space {
+    margin-top: 10px;
+}
+.scroll {
+    color: limegreen;
+}
+.example {
+    color: limegreen;
+}
+@media screen and (max-width: 687px) {
+    .scroll {
+        overflow-x: scroll;
+        margin-top: 10px;
+    }
+}

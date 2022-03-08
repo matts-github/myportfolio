@@ -10,86 +10,12 @@
         <script src="https://kit.fontawesome.com/1629a23b6c.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div id="sidebar">
-            <div class="hamburger" onclick="show()">
-                <i class="fas fa-bars fa-3x"></i>  
-            </div>
-
-            <div class="nav-content">
-                <a href="index.html" class="nav-initial">
-                    <div class="initial-container">
-                        <h2 class="letters">MW</h2>
-                    </div>
-                </a>
-                <ul class="nav-list">
-                    <li><a href="about-me.html">About Me</a></li>
-                    <li><a href="index.html#projects">My Portfolio</a></li>
-                    <li><a href="coding-examples.html">Coding Examples</a></li>
-                    <li><a href="SCS-Scheme.html">SCS Scheme</a></li>
-                    <li class="contact-nav"><a href="index.html#contact-content">Contact Me</a></li>
-                </ul>
-                <ul class="nav-social">
-                    <li><a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="coding-examples" class="wrapper">
-            <!-- Mobile Nav -->
-            <div class="mobile-nav">
-                <div class="mobile-wrapper">
-                    <a href="index.html" class="nav-initial">
-                        <div class="initial-container">
-                            <h2 class="letters">MW</h2>
-                        </div>
-                    </a>
-                    <div class="hamburger">
-                        <i class="fas fa-bars fa-3x"></i>  
-                    </div>
-                </div>
-            </div>
-            <!-- Mobile Nav End -->
-            <main>
-                <!-- Header Start -->
-                <header>
-                    <h2 class="bar">Coding Examples</h2>
-                </header>
-                <!-- Header End -->
-                <!-- Comming Soon... -->
-                <div class="coming-soon">
-                    <h2 id="example-description">Here is an example of the JavaScript used to create the typewritter effect for this website.</h2>
-                    <code>const textDisplay = document.getElementById('typewritter')
-                        const phrases = ['I am a software developerr']
-                        let i = 0
-                        let j = 0
-                        let curentPhrase = []
-                        function loop () {
-                            
-                            if (i < phrases.length) {
-                                textDisplay.innerHTML = curentPhrase.join('')
-                                if (j <= phrases[i].length) {
-                                    curentPhrase.push(phrases[i][j])
-                                    j++
-                                }
-                        
-                                if (j == phrases[i].length) {
-                                    i++
-                                }
-                            }
-                            setTimeout(loop, 500)
-                        }
-                        
-                        loop()
-                    </code>
+        <main id="outer_exp">
+            <div id="sidebar">
+                <div class="hamburger" onclick="show()">
+                    <i class="fas fa-bars fa-3x"></i>  
                 </div>
 
-                <div>
-                    <span class="about-me" id="typewritter"></span>
-                </div>
-
-                <!-- Comming Soon End -->
-            </main>
-            <!-- Nav Bar Start -->
-            <nav>
                 <div class="nav-content">
                     <a href="index.html" class="nav-initial">
                         <div class="initial-container">
@@ -99,7 +25,7 @@
                     <ul class="nav-list">
                         <li><a href="about-me.html">About Me</a></li>
                         <li><a href="index.html#projects">My Portfolio</a></li>
-                        <li><a href="#">Coding Examples</a></li>
+                        <li><a href="coding-examples.html">Coding Examples</a></li>
                         <li><a href="SCS-Scheme.html">SCS Scheme</a></li>
                         <li class="contact-nav"><a href="index.html#contact-content">Contact Me</a></li>
                     </ul>
@@ -107,9 +33,199 @@
                         <li><a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a></li>
                     </ul>
                 </div>
-            </nav>
-            <!-- Nav bar end -->
-        </div>
-        <script src="js/app.js"></script>
+            </div>
+            <div id="coding-examples" class="wrapper">
+                <!-- Mobile Nav -->
+                <div class="mobile-nav">
+                    <div class="mobile-wrapper">
+                        <a href="index.html" class="nav-initial">
+                            <div class="initial-container">
+                                <h2 class="letters">MW</h2>
+                            </div>
+                        </a>
+                        <div class="hamburger">
+                            <i class="fas fa-bars fa-3x"></i>  
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile Nav End -->
+                <main>
+                    <!-- Header Start -->
+                    <header>
+                        <h2 class="bar">Coding Examples</h2>
+                    </header>
+                    <!-- Header End -->
+                    <!-- Comming Soon... -->
+                    <div class="coming-soon">
+                        <h2 id="example-description">Here is an example of the JavaScript used to create the typewritter effect for this website.</h2>
+                        <code>const textDisplay = document.getElementById('typewritter')
+                            const phrases = ['I am a software developerr']
+                            let i = 0
+                            let j = 0
+                            let curentPhrase = []
+                            function loop () {
+                                
+                                if (i < phrases.length) {
+                                    textDisplay.innerHTML = curentPhrase.join('')
+                                    if (j <= phrases[i].length) {
+                                        curentPhrase.push(phrases[i][j])
+                                        j++
+                                    }
+                            
+                                    if (j == phrases[i].length) {
+                                        i++
+                                    }
+                                }
+                                setTimeout(loop, 500)
+                            }
+                            
+                            loop()
+                        </code>
+                    </div>
+                    
+                    <div>
+                        <span class="about-me" id="typewritter"></span>
+                    </div>
+
+
+                    <h3 id="ref">For this reflection I was asked to create a result from a sub query within a query.
+                        The image bellow shows the schema of the database for the teams, venues, players, referees, bookings,
+                        players, substitutions etc for the Euro 2016.
+                    </h3>
+                    <div id="outer_img">
+                        <img id="db" src="img/soccer-database.png" alt="database">
+                    </div>  
+                    <div id="outer_description">
+                        <h3 id="ref-1">I decided to find all the players that missed penalties and order them by age.</h3>
+                        <pre class="scroll">SELECT player_id, player_name AS Full_Name, age, posi_to_play AS Position
+FROM player_mast
+WHERE player_mast.player_id IN (
+SELECT player_id
+FROM penalty_shootout
+WHERE score_goal = 'N'
+)
+ORDER BY age
+                            </pre>
+                            <h2>Here is the breakdown of what I have done</h2>
+                            <p class="space">First I have selected the player_id, player_name and age from the player mast table
+                                giving a couple of the column names aliases to make them more people freindly:</p>
+                            <pre class="scroll">SELECT player_id, player_name AS Full_Name, age, posi_to_play AS Position
+FROM player_mast
+                            </pre>
+                            <p class="space">Then next I creted a sub/inner query where I linked the player_id to the table 
+                                penalty_shootout.
+                            </p>
+                            <pre class="example">
+WHERE player_mast.player_id IN (
+SELECT player_id
+FROM penalty_shootout
+                            </pre>
+                            <p class="space">Then from here I wanted to find out what what players missed their penalties,
+                                I did this by simply selecting 'N' for no in the score_goal column:
+                            </p>
+                            <pre class="example">
+WHERE score_goal = 'N'
+)
+                            </pre>
+                            <p class="space">Next I ordered the players by acending age from youngest to oldest.</p>
+                            <pre class="example">
+ORDER BY age
+                            </pre>
+                            <div class="center">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td>player_id</td>
+                                            <td>full_name</td>
+                                            <td>age</td>
+                                            <td>position</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>160477</td>
+                                            <td>Granit Xhaka</td>
+                                            <td>23</td>
+                                            <td>MF</td>
+                                        </tr>
+                                        <tr>
+                                            <td>160253</td>
+                                            <td>Simone Zaza</td>
+                                            <td>24</td>
+                                            <td>FD</td>
+                                        </tr>
+                                        <tr>
+                                            <td>160237</td>
+                                            <td>Matteo Darmian</td>
+                                            <td>26</td>
+                                            <td>DF</td>
+                                        </tr>
+                                        <tr>
+                                            <td>160183</td>
+                                            <td>Thomas Muller</td>
+                                            <td>26</td>
+                                            <td>FD</td>
+                                        </tr>
+                                        <tr>
+                                            <td>160177</td>
+                                            <td>Mesut ozil</td>
+                                            <td>27</td>
+                                            <td>MF</td>
+                                        </tr>
+                                        <tr>
+                                            <td>160235</td>
+                                            <td>Leonardo Bonucci</td>
+                                            <td>29</td>
+                                            <td>DF</td>
+                                        </tr>
+                                        <tr>
+                                            <td>160252</td>
+                                            <td>Graziano Pelle</td>
+                                            <td>30</td>
+                                            <td>FD</td>
+                                        </tr>
+                                        <tr>
+                                            <td>160287</td>
+                                            <td>Jakub Blaszczykowski</td>
+                                            <td>30</td>
+                                            <td>MF</td>
+                                        </tr>
+                                        <tr>
+                                            <td>160180</td>
+                                            <td>Bastian Schweinsteiger</td>
+                                            <td>31</td>
+                                            <td>MF</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                    </div>      
+
+                    <!-- Comming Soon End -->
+                </main>
+                <!-- Nav Bar Start -->
+                <nav>
+                    <div class="nav-content">
+                        <a href="index.html" class="nav-initial">
+                            <div class="initial-container">
+                                <h2 class="letters">MW</h2>
+                            </div>
+                        </a>
+                        <ul class="nav-list">
+                            <li><a href="about-me.html">About Me</a></li>
+                            <li><a href="index.html#projects">My Portfolio</a></li>
+                            <li><a href="#">Coding Examples</a></li>
+                            <li><a href="SCS-Scheme.html">SCS Scheme</a></li>
+                            <li class="contact-nav"><a href="index.html#contact-content">Contact Me</a></li>
+                        </ul>
+                        <ul class="nav-social">
+                            <li><a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Nav bar end -->
+            </div>
+            <script src="js/app.js"></script>
+        </main>
     </body>
 </html>
